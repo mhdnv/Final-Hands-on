@@ -1,0 +1,292 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo
+spec:
+  containers:
+  - name: testpod
+    image: alpine:3.5
+    command: ["ping","8.8.8.8"]
+
+
+PS C:\Users\htpha\Onedrive\Desktop\project> kubectl apply -f pod.yaml 
+ pod/demo created                                                 
+PS C:\Users\htpha\Onedrive\Desktop\project> kubectl get pods
+NAME   READY   STATUS    RESTARTS   AGE
+demo   1/1     Running   0          13s
+PS C:\Users\htpha\Onedrive\Desktop\project> kubectl logs demo
+PING 8.8.8.8 (8.8.8.8): 56 data bytes
+64 bytes from 8.8.8.8: seq=0 ttl=37 time=100.720 ms
+64 bytes from 8.8.8.8: seq=1 ttl=37 time=72.943 ms
+64 bytes from 8.8.8.8: seq=2 ttl=37 time=80.027 ms
+64 bytes from 8.8.8.8: seq=3 ttl=37 time=101.270 ms
+64 bytes from 8.8.8.8: seq=4 ttl=37 time=63.521 ms
+64 bytes from 8.8.8.8: seq=5 ttl=37 time=95.831 ms
+64 bytes from 8.8.8.8: seq=6 ttl=37 time=97.797 ms
+64 bytes from 8.8.8.8: seq=7 ttl=37 time=83.586 ms
+64 bytes from 8.8.8.8: seq=8 ttl=37 time=73.738 ms
+64 bytes from 8.8.8.8: seq=9 ttl=37 time=69.147 ms
+64 bytes from 8.8.8.8: seq=10 ttl=37 time=94.940 ms
+64 bytes from 8.8.8.8: seq=11 ttl=37 time=90.740 ms
+64 bytes from 8.8.8.8: seq=13 ttl=37 time=96.955 ms
+64 bytes from 8.8.8.8: seq=14 ttl=37 time=107.601 ms
+64 bytes from 8.8.8.8: seq=15 ttl=37 time=99.959 ms
+64 bytes from 8.8.8.8: seq=16 ttl=37 time=132.833 ms
+64 bytes from 8.8.8.8: seq=17 ttl=37 time=93.857 ms
+64 bytes from 8.8.8.8: seq=18 ttl=37 time=102.856 ms
+64 bytes from 8.8.8.8: seq=19 ttl=37 time=70.665 ms
+64 bytes from 8.8.8.8: seq=20 ttl=37 time=110.697 ms
+64 bytes from 8.8.8.8: seq=21 ttl=37 time=86.797 ms
+64 bytes from 8.8.8.8: seq=22 ttl=37 time=73.562 ms
+64 bytes from 8.8.8.8: seq=23 ttl=37 time=84.465 ms
+64 bytes from 8.8.8.8: seq=24 ttl=37 time=71.582 ms
+64 bytes from 8.8.8.8: seq=25 ttl=37 time=98.773 ms
+PS C:\Users\htpha\Onedrive\Desktop\project> kubectl delete -f pod.yaml
+ pod "demo" deleted                                                 
+PS C:\Users\htpha\Onedrive\Desktop\project>
+PS C:\Users\htpha\Onedrive\Desktop\project> docker swarm init                                                                             
+Error response from daemon: This node is already part of a swarm. Use "docker swarm leave" to leave this swarm and join another one.
+PS C:\Users\htpha\Onedrive\Desktop\project> docker swarm leave
+Error response from daemon: You are attempting to leave the swarm on a node that is participating as a manager. Removing the last manager erases all current state of the swarm. Use `--force` to ignore this message.                                                          
+PS C:\Users\htpha\Onedrive\Desktop\project> docker swarm init
+Error response from daemon: This node is already part of a swarm. Use "docker swarm leave" to leave this swarm and join another one.
+PS C:\Users\htpha\Onedrive\Desktop\project> docker service create --name demo alpine:3.5 ping 8.8.8.8
+a2zq6roalear81ph1jrsscvo9
+1/1: running   [==================================================>]                                                                                                                                                                                                                                                                                                   
+overall progress: 1 out of 1 tasks
+verify: Service converged 
+PS C:\Users\htpha\Onedrive\Desktop\project> docker service ps demo                                                                                                                                                             
+ID             NAME      IMAGE        NODE             DESIRED STATE   CURRENT STATE            ERROR     PORTS
+uo4kt8dz2ww7   demo.1    alpine:3.5   docker-desktop   Running         Running 21 seconds ago
+PS C:\Users\htpha\Onedrive\Desktop\project> docker service logs demo
+demo.1.uo4kt8dz2ww7@docker-desktop    | PING 8.8.8.8 (8.8.8.8): 56 data bytes
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=0 ttl=37 time=105.800 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=1 ttl=37 time=89.613 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=2 ttl=37 time=90.509 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=3 ttl=37 time=114.213 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=4 ttl=37 time=105.943 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=5 ttl=37 time=169.510 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=6 ttl=37 time=69.995 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=7 ttl=37 time=67.974 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=8 ttl=37 time=62.047 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=9 ttl=37 time=130.504 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=10 ttl=37 time=690.692 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=11 ttl=37 time=146.565 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=12 ttl=37 time=67.587 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=13 ttl=37 time=74.446 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=14 ttl=37 time=71.927 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=15 ttl=37 time=65.908 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=16 ttl=37 time=189.769 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=17 ttl=37 time=97.468 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=18 ttl=37 time=86.228 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=19 ttl=37 time=86.388 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=20 ttl=37 time=92.699 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=21 ttl=37 time=63.066 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=22 ttl=37 time=74.862 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=23 ttl=37 time=81.773 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=24 ttl=37 time=83.143 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=25 ttl=37 time=74.180 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=26 ttl=37 time=117.693 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=27 ttl=37 time=77.230 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=28 ttl=37 time=94.282 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=29 ttl=37 time=87.286 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=30 ttl=37 time=64.780 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=31 ttl=37 time=104.730 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=32 ttl=37 time=99.888 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=33 ttl=37 time=91.981 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=34 ttl=37 time=102.475 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=35 ttl=37 time=87.130 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=36 ttl=37 time=194.775 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=37 ttl=37 time=126.842 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=38 ttl=37 time=88.856 ms
+demo.1.uo4kt8dz2ww7@docker-desktop    | 64 bytes from 8.8.8.8: seq=39 ttl=37 time=71.611 ms
+PS C:\Users\htpha\Onedrive\Desktop\project> docker service rm demo
+demo
+
+
+
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bb-demo
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      bb: web
+  template:
+    metadata:
+      labels:
+        bb: web
+    spec:
+      containers:
+      - name: bb-site
+        image: mhdnv/getting-started
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bb-entrypoint
+  namespace: default
+spec:
+  type: NodePort
+  selector:
+    bb: web
+  ports:
+  - port: 3000
+    targetPort: 3000
+    nodePort: 30001
+
+
+PS C:\Users\htpha\OneDrive\Desktop\bb> kubectl apply -f bb.yaml
+deployment.apps/bb-demo unchanged
+service/bb-entrypoint unchanged
+PS C:\Users\htpha\OneDrive\Desktop\bb> kubectl get deployment
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+bb-demo   1/1     1            1           7h36m
+PS C:\Users\htpha\OneDrive\Desktop\bb> kubectl get services
+NAME            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+bb-entrypoint   NodePort    10.106.73.238   <none>        3000:30001/TCP   7h36m
+kubernetes      ClusterIP   10.96.0.1       <none>        443/TCP          10h
+
+PS C:\Users\htpha\OneDrive\Desktop\bb> kubectl delete -f bb.yaml        
+deployment.apps "bb-demo" deleted
+service "bb-entrypoint" deleted
+
+
+
+version: '3.7'
+services:
+  bb-app:
+    image: mhdnv/getting-started
+    ports:
+      - "3000:3000"
+
+
+PS C:\Users\htpha\OneDrive\Desktop\bb> docker stack deploy -c bb-stack.yaml demo
+Creating network demo_default
+Creating service demo_bb-app
+PS C:\Users\hp\Desktop\kubernet> docker service ls
+ID             NAME          MODE         REPLICAS   IMAGE                               PORTS
+ew3r7alhgszd   demo_bb-app   replicated   1/1        mhdnv/getting-started:latest   *:3000->3000/tcp
+PS C:\Users\hp\Desktop\kubernet> docker stack rm demo
+Removing service demo_bb-app
+Removing network demo_default
+
+
+
+{
+  "metrics-addr" : "127.0.0.1:9323",
+  "experimental" : true
+}
+
+
+
+# my global config
+global:
+  scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+  # scrape_timeout is set to the global default (10s).
+
+  # Attach these labels to any time series or alerts when communicating with
+  # external systems (federation, remote storage, Alertmanager).
+  external_labels:
+      monitor: 'codelab-monitor'
+
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files:
+  # - "first.rules"
+  # - "second.rules"
+
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: 'prometheus'
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+
+    static_configs:
+      - targets: ['host.docker.internal:9090'] # Only works on Docker Desktop for Windows
+
+  - job_name: 'docker'
+         # metrics_path defaults to '/metrics'
+         # scheme defaults to 'http'.
+
+    static_configs:
+      - targets: ['192.168.65.1:9323']
+
+
+
+Configure Docker
+# create daemon.json file
+Windows Server: C:\ProgramData\docker\config\daemon.json
+
+#Configure and run Prometheus
+create a prometheus.yml file the location
+C:\tmp\prometheus.yml for windows Windows
+/tmp/prometheus.yml (Linux or Mac)
+
+#start single replica by 
+for windows
+PS C:\> docker service create --replicas 1 --name my-prometheus
+    --mount type=bind,source=C:/tmp/prometheus.yml,destination=/etc/prometheus/prometheus.yml
+    --publish published=9090,target=9090,protocol=tcp
+    prom/prometheus
+
+jhq33r04ir1ego3rjc8rilf6i
+overall progress: 1 out of 1 tasks
+1/1: running   [==================================================>]       
+verify: Service converged
+
+
+for linux
+$ docker service create --replicas 1 --name my-prometheus \
+    --mount type=bind,source=/tmp/prometheus.yml,destination=/etc/prometheus/prometheus.yml \
+    --publish published=9090,target=9090,protocol=tcp \
+    prom/prometheus
+
+for mac
+$ docker service create --replicas 1 --name my-prometheus \
+    --mount type=bind,source=/tmp/prometheus.yml,destination=/etc/prometheus/prometheus.yml \
+    --publish published=9090,target=9090,protocol=tcp \
+    prom/prometheus
+
+#after that
+Verify that the Docker target is listed at http://localhost:9090/targets/.
+
+#Use Prometheus
+Create a graph. Click the Graphs link in the Prometheus UI. Choose a metric from the combo box to the right
+ of the Execute button, and click Execute. The screenshot below 
+shows the graph for engine_daemon_network_actions_seconds_count .
+
+# creating 10 tasks
+ $ docker service create \
+  --replicas 10 \
+  --name ping_service \
+  alpine ping docker.com
+
+wtdrmb6rs2diduye0dpq1qn0o
+overall progress: 10 out of 10 tasks
+1/10: running
+2/10: running
+3/10: running
+4/10: running
+5/10: running
+6/10: running
+7/10: running
+8/10: running
+9/10: running
+10/10: running
+verify: Service converged
+
+# removing the ping
+PS C:\> docker service remove my-prometheus
+my-prometheus
+PS C:\> docker service remove ping_service 
+ping_service
+

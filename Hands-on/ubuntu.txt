@@ -1,0 +1,745 @@
+mhd@DESKTOP-48BF3KM:~$ pwd
+/home/mhd
+
+mhd@DESKTOP-48BF3KM:~$ cd /
+mhd@DESKTOP-48BF3KM:/$ ls
+bin  boot  dev  etc  home  init  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+mhd@DESKTOP-48BF3KM:/$ cd usr
+mhd@DESKTOP-48BF3KM:/usr$ ls
+bin  config  games  include  lib  lib32  lib64  libexec  libx32  local  sbin  share  src
+mhd@DESKTOP-48BF3KM:/usr$ cd ..
+mhd@DESKTOP-48BF3KM:/$ cd sys
+mhd@DESKTOP-48BF3KM:/sys$ ls
+block  bus  class  dev  devices  firmware  fs  kernel  module
+mhd@DESKTOP-48BF3KM:/sys$ cd ..
+mhd@DESKTOP-48BF3KM:/$ cd usr/local
+mhd@DESKTOP-48BF3KM:/usr/local$ ls
+bin  etc  games  include  lib  man  sbin  share  src
+mhd@DESKTOP-48BF3KM:/usr/local$ cd ..
+mhd@DESKTOP-48BF3KM:/usr$ cd games
+mhd@DESKTOP-48BF3KM:/usr/games$ cd
+
+
+mhd@DESKTOP-48BF3KM:~$ mkdir dark
+mhd@DESKTOP-48BF3KM:~$ cd dark
+mhd@DESKTOP-48BF3KM:~/dark$ nano darkinfo.txt
+mhd@DESKTOP-48BF3KM:~/dark$ ls
+darkinfo.txt
+mhd@DESKTOP-48BF3KM:~/dark$ cat darkinfo.txt
+name = faheem
+id= 206545
+location = calicut
+mhd@DESKTOP-48BF3KM:~/dark$ mv darkinfo.txt /home/mhd
+mhd@DESKTOP-48BF3KM:~/dark$ ls
+mhd@DESKTOP-48BF3KM:~/dark$ cd ..
+mhd@DESKTOP-48BF3KM:~$ ls
+2         Hashmum  dark          dirinfo.txt      faheemrole  func.sh       if.sh    looparray.sh  mhd_playbook  new     newfile      parameters.sh  test.yml  zing
+Abcimpex  base.sh  darkinfo.txt  faheem_playbook  file        hashinfo.txt  loop.sh  mhd           nano.save     newdir  newinfo.txt  temp           wloop.sh
+mhd@DESKTOP-48BF3KM:~$ cp darkinfo.txt /home/mhd/dark
+mhd@DESKTOP-48BF3KM:~$ cd dark
+mhd@DESKTOP-48BF3KM:~/dark$ ls
+darkinfo.txt
+mhd@DESKTOP-48BF3KM:~/dark$ cat darkinfo.txt
+name = faheem
+id= 206545
+location = calicut
+mhd@DESKTOP-48BF3KM:~/dark$ cd ..
+mhd@DESKTOP-48BF3KM:~$ whoami
+mhd
+mhd@DESKTOP-48BF3KM:~$ id
+uid=1000(mhd) gid=1000(mhd) groups=1000(mhd),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev),1001(docker)
+mhd@DESKTOP-48BF3KM:~$ w
+ 13:28:37 up  1:47,  0 users,  load average: 0.00, 0.02, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mhd@DESKTOP-48BF3KM:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+mhd:x:1000:1000:,,,:/home/mhd:/bin/bash
+mhd@DESKTOP-48BF3KM:~$ sudo adduser jack
+[sudo] password for mhd:
+Adding user `jack' ...
+Adding new group `jack' (1002) ...
+Adding new user `jack' (1001) with group `jack' ...
+The home directory `/home/jack' already exists.  Not copying from `/etc/skel'.
+adduser: Warning: The home directory `/home/jack' does not belong to the user you are currently creating.
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for jack
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+
+Is the information correct? [Y/n] mhd@DESKTOP-48BF3KM:~$
+mhd@DESKTOP-48BF3KM:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+mhd:x:1000:1000:,,,:/home/mhd:/bin/bash
+jack:x:1001:1002:,,,:/home/jack:/bin/bash
+mhd@DESKTOP-48BF3KM:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,mhd
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:mhd
+fax:x:21:
+voice:x:22:
+cdrom:x:24:mhd
+floppy:x:25:mhd
+tape:x:26:
+sudo:x:27:mhd
+audio:x:29:mhd
+dip:x:30:mhd
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:mhd
+sasl:x:45:
+plugdev:x:46:mhd
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+tss:x:111:
+uuidd:x:112:
+tcpdump:x:113:
+ssh:x:114:
+landscape:x:115:
+admin:x:116:
+netdev:x:117:mhd
+lxd:x:118:
+mhd:x:1000:
+devops:x:1003:
+docker:x:1001:mhd
+jack:x:1002:
+mhd@DESKTOP-48BF3KM:~$ ls
+2         Hashmum  dark          dirinfo.txt      faheemrole  func.sh       if.sh    looparray.sh  mhd_playbook  new     newfile      parameters.sh  test.yml  zing
+Abcimpex  base.sh  darkinfo.txt  faheem_playbook  file        hashinfo.txt  loop.sh  mhd           nano.save     newdir  newinfo.txt  temp           wloop.sh
+mhd@DESKTOP-48BF3KM:~$ ls -il
+total 104
+37445 -rw-r--r--  1 mhd mhd    0 Dec 16 17:57 2
+37325 drwxr-xr-x  3 mhd mhd 4096 Dec 17 15:20 Abcimpex
+96945 drwxr-xr-x  2 mhd mhd 4096 Jan  7 17:41 Hashmum
+40745 -rwxrwxr--  1 mhd mhd   95 Jan  7 19:28 base.sh
+97522 drwxr-xr-x  2 mhd mhd 4096 Jan 20 13:26 dark
+97524 -rw-r--r--  1 mhd mhd   44 Jan 20 13:24 darkinfo.txt
+97012 -rwxrwxr--  1 mhd mhd   47 Jan  7 22:06 dirinfo.txt
+97206 drwxr-xr-x  4 mhd mhd 4096 Jan  8 12:00 faheem_playbook
+97207 drwxr-xr-x 10 mhd mhd 4096 Jan 14 21:09 faheemrole
+97007 drwxr-xr-x  2 mhd mhd 4096 Jan  7 21:59 file
+97005 -rwxrwxr--  1 mhd mhd   95 Jan  7 20:12 func.sh
+96996 -rwxrwxr--  1 mhd mhd   50 Jan  7 17:39 hashinfo.txt
+97000 -rwxrwxr--  1 mhd mhd  238 Jan  7 19:54 if.sh
+97001 -rwxrwxr--  1 mhd mhd   80 Jan  7 19:59 loop.sh
+97004 -rwxrwxr--  1 mhd mhd   93 Jan  7 20:08 looparray.sh
+40904 drwxr-xr-x 10 mhd mhd 4096 Dec 15 17:48 mhd
+96997 drwxr-xr-x  5 mhd mhd 4096 Jan  8 09:47 mhd_playbook
+96881 -rw-------  1 mhd mhd    1 Dec 28 18:45 nano.save
+97006 drwxr-xr-x  2 mhd mhd 4096 Jan  7 21:59 new
+97009 drwxr-xr-x  2 mhd mhd 4096 Jan  7 22:08 newdir
+97008 drwxr-xr-x  2 mhd mhd 4096 Jan  7 22:03 newfile
+97010 -rwxrwxr--  1 mhd mhd   46 Jan  7 22:00 newinfo.txt
+96999 -rwxrwxr--  1 mhd mhd  259 Jan  7 19:42 parameters.sh
+96882 drwxrwxr-x  2 mhd mhd 4096 Dec 20 14:49 temp
+96998 -rw-r--r--  1 mhd mhd  116 Jan  7 18:15 test.yml
+97003 -rwxrwxr--  1 mhd mhd   71 Jan  7 20:03 wloop.sh
+37448 drwxr-xr-x  2 mhd mhd 4096 Dec 28 17:40 zing
+mhd@DESKTOP-48BF3KM:~$ ls -a
+.         .bash_aliases     .config     .motd_shown                Abcimpex      dirinfo.txt      hashinfo.txt  mhd_playbook  newinfo.txt    zing
+..        .bash_aliases.sh  .docker     .profile                   Hashmum       faheem_playbook  if.sh         nano.save     parameters.sh
+.ansible  .bash_history     .kube       .python_history            base.sh       faheemrole       loop.sh       new           temp
+.aws      .bash_logout      .landscape  .sudo_as_admin_successful  dark          file             looparray.sh  newdir        test.yml
+.azure    .bashrc           .local      2                          darkinfo.txt  func.sh          mhd           newfile       wloop.sh
+mhd@DESKTOP-48BF3KM:~$ ls -l
+total 104
+-rw-r--r--  1 mhd mhd    0 Dec 16 17:57 2
+drwxr-xr-x  3 mhd mhd 4096 Dec 17 15:20 Abcimpex
+drwxr-xr-x  2 mhd mhd 4096 Jan  7 17:41 Hashmum
+-rwxrwxr--  1 mhd mhd   95 Jan  7 19:28 base.sh
+drwxr-xr-x  2 mhd mhd 4096 Jan 20 13:26 dark
+-rw-r--r--  1 mhd mhd   44 Jan 20 13:24 darkinfo.txt
+-rwxrwxr--  1 mhd mhd   47 Jan  7 22:06 dirinfo.txt
+drwxr-xr-x  4 mhd mhd 4096 Jan  8 12:00 faheem_playbook
+drwxr-xr-x 10 mhd mhd 4096 Jan 14 21:09 faheemrole
+drwxr-xr-x  2 mhd mhd 4096 Jan  7 21:59 file
+-rwxrwxr--  1 mhd mhd   95 Jan  7 20:12 func.sh
+-rwxrwxr--  1 mhd mhd   50 Jan  7 17:39 hashinfo.txt
+-rwxrwxr--  1 mhd mhd  238 Jan  7 19:54 if.sh
+-rwxrwxr--  1 mhd mhd   80 Jan  7 19:59 loop.sh
+-rwxrwxr--  1 mhd mhd   93 Jan  7 20:08 looparray.sh
+drwxr-xr-x 10 mhd mhd 4096 Dec 15 17:48 mhd
+drwxr-xr-x  5 mhd mhd 4096 Jan  8 09:47 mhd_playbook
+-rw-------  1 mhd mhd    1 Dec 28 18:45 nano.save
+drwxr-xr-x  2 mhd mhd 4096 Jan  7 21:59 new
+drwxr-xr-x  2 mhd mhd 4096 Jan  7 22:08 newdir
+drwxr-xr-x  2 mhd mhd 4096 Jan  7 22:03 newfile
+-rwxrwxr--  1 mhd mhd   46 Jan  7 22:00 newinfo.txt
+-rwxrwxr--  1 mhd mhd  259 Jan  7 19:42 parameters.sh
+drwxrwxr-x  2 mhd mhd 4096 Dec 20 14:49 temp
+-rw-r--r--  1 mhd mhd  116 Jan  7 18:15 test.yml
+-rwxrwxr--  1 mhd mhd   71 Jan  7 20:03 wloop.sh
+drwxr-xr-x  2 mhd mhd 4096 Dec 28 17:40 zing
+mhd@DESKTOP-48BF3KM:~$ rm -- newinfo.txt
+
+mhd@DESKTOP-48BF3KM:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        3163004      566100     1090160      374276     1506744     2064236
+Swap:       1048576           0     1048576
+mhd@DESKTOP-48BF3KM:~$ uptime
+ 13:41:32 up  2:00,  0 users,  load average: 0.11, 0.04, 0.01
+mhd@DESKTOP-48BF3KM:~$ top
+top - 13:42:15 up  2:01,  0 users,  load average: 0.05, 0.03, 0.00
+Tasks:  10 total,   1 running,   9 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   3088.9 total,   1063.9 free,    553.4 used,   1471.7 buff/cache
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   2015.3 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0     892    548    488 S   0.0   0.0   0:00.18 init
+  112 root      20   0     892     76     16 S   0.0   0.0   0:00.00 init
+  113 root      20   0     892     76     16 S   0.0   0.0   0:00.05 init
+  114 root      20   0 1532028  30596  13156 S   0.0   1.0   0:05.06 docker-desktop-
+  125 root      20   0     892     76     16 S   0.0   0.0   0:00.00 init
+  126 mhd       20   0  764520  47724  29068 S   0.0   1.5   0:02.85 docker
+  152 root      20   0     892     76     16 S   0.0   0.0   0:00.03 init
+  153 root      20   0     892     76     16 S   0.0   0.0   0:00.38 init
+  154 mhd       20   0   10168   5044   3268 S   0.0   0.2   0:01.47 bash
+  299 mhd       20   0   10904   3736   3192 R   0.0   0.1   0:00.05 top
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+mhd@DESKTOP-48BF3KM:~$ last
+
+wtmp begins Thu Dec  9 11:54:54 2021
+mhd@DESKTOP-48BF3KM:~$ ps
+  PID TTY          TIME CMD
+  154 pts/2    00:00:01 bash
+  301 pts/2    00:00:00 ps
+mhd@DESKTOP-48BF3KM:~$ df
+Filesystem     1K-blocks      Used Available Use% Mounted on
+/dev/sdd       263174212   1920748 247815308   1% /
+tmpfs            1581500    373264   1208236  24% /mnt/wsl
+/dev/sdc       263174212    750956 248985100   1% /mnt/wsl/docker-desktop-data/isocache
+none             1581500        12   1581488   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdb       263174212    124936 249611120   1% /mnt/wsl/docker-desktop/docker-desktop-proxy
+tools          361192444 141213652 219978792  40% /init
+none             1579416         0   1579416   0% /dev
+none             1581500        12   1581488   1% /run
+none             1581500         0   1581500   0% /run/lock
+none             1581500         0   1581500   0% /run/shm
+none             1581500         0   1581500   0% /run/user
+tmpfs            1581500         0   1581500   0% /sys/fs/cgroup
+C:\            361192444 141213652 219978792  40% /mnt/c
+D:\            614399996  18116072 596283924   3% /mnt/d
+/dev/loop0        342106    342106         0 100% /mnt/wsl/docker-desktop/cli-tools
+
+mhd@DESKTOP-48BF3KM:~$ pmap
+
+Usage:
+ pmap [options] PID [PID ...]
+
+Options:
+ -x, --extended              show details
+ -X                          show even more details
+            WARNING: format changes according to /proc/PID/smaps
+ -XX                         show everything the kernel provides
+ -c, --read-rc               read the default rc
+ -C, --read-rc-from=<file>   read the rc from file
+ -n, --create-rc             create new default rc
+ -N, --create-rc-to=<file>   create new rc to file
+            NOTE: pid arguments are not allowed with -n, -N
+ -d, --device                show the device format
+ -q, --quiet                 do not display header and footer
+ -p, --show-path             show path in the mapping
+ -A, --range=<low>[,<high>]  limit results to the given range
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see pmap(1).
+mhd@DESKTOP-48BF3KM:~$ htop
+mhd@DESKTOP-48BF3KM:~$ env
+SHELL=/bin/bash
+WSL_DISTRO_NAME=Ubuntu-20.04
+NAME=DESKTOP-48BF3KM
+PWD=/home/mhd
+LOGNAME=mhd
+MOTD_SHOWN=update-motd
+HOME=/home/mhd
+LANG=C.UTF-8
+WSL_INTEROP=/run/WSL/153_interop
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LESSCLOSE=/usr/bin/lesspipe %s %s
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=mhd
+SHLVL=1
+WSLENV=
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04onWindows_2004.2021.825.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/htpha/AppData/Local/Microsoft/WindowsApps:/mnt/d/Microsoft VS Code/bin:/snap/bin
+HOSTTYPE=x86_64
+_=/usr/bin/env
+OLDPWD=/usr/games
+
+
+
+
+
+mhd@DESKTOP-48BF3KM:~$ nano
+mhd@DESKTOP-48BF3KM:~$ chmod 774 base.sh
+mhd@DESKTOP-48BF3KM:~$ nano base.sh
+mhd@DESKTOP-48BF3KM:~$ ./base.sh
+welcome to shell scripting
+Faheem Calicut
+mhd@DESKTOP-48BF3KM:~$ cat base.sh
+#!/bin/bash
+echo "welcome to shell scripting"
+
+name='Faheem'
+city='Calicut'
+echo "$name $city"
+
+
+mhd@DESKTOP-48BF3KM:~$ nano
+mhd@DESKTOP-48BF3KM:~$ chmod 774 reading.sh
+mhd@DESKTOP-48BF3KM:~$ ./reading.sh
+what is your name:
+faheem
+what is your age:
+23
+mhd@DESKTOP-48BF3KM:~$ cat reading.sh
+#!/bin/bash
+echo what is your name:
+read name
+echo what is your age:
+read age
+
+
+mhd@DESKTOP-48BF3KM:~$ nano
+mhd@DESKTOP-48BF3KM:~$ chmod 774 parameters.sh
+mhd@DESKTOP-48BF3KM:~$ ./parameters.sh 123 hello hey 567
+The script title is ./parameters.sh
+The first argument is 123
+The second argument is hello
+The third argument is hey
+The fourth argument is 567
+/$ 137 is the PID of the script
+/# THe total number of parameters in the script 4
+mhd@DESKTOP-48BF3KM:~$ cat parameters.sh
+#!/bin/bash
+echo The script title is $0
+#
+echo The first argument is $1
+echo The second argument is $2
+echo The third argument is $3
+echo The fourth argument is $4
+#
+echo /$ $$ is the PID of the script
+echo /# THe total number of parameters in the script $#
+
+
+
+mhd@DESKTOP-48BF3KM:~$ nano
+mhd@DESKTOP-48BF3KM:~$ chmod 774 if.sh
+mhd@DESKTOP-48BF3KM:~$ ./if.sh
+enter a fruit
+apple
+ I love apples
+mhd@DESKTOP-48BF3KM:~$ ./if.sh
+enter a fruit
+orange
+ I love orange
+mhd@DESKTOP-48BF3KM:~$ ./if.sh
+enter a fruit
+mango
+ I like mango
+mhd@DESKTOP-48BF3KM:~$ ./if.sh
+enter a fruit
+pineapple
+ I can like any pineapple
+mhd@DESKTOP-48BF3KM:~$ cat if.sh
+#!/bin/bash
+echo "enter a fruit"
+read fruit
+if [ $fruit = apple ]
+        then echo " I love apples"
+elif [ $fruit = mango ]
+        then echo " I like $fruit"
+elif [ $fruit = orange ]
+        then echo " I love orange"
+        else echo " I can like any $fruit"
+fi
+
+
+
+mhd@DESKTOP-48BF3KM:~$ nano
+mhd@DESKTOP-48BF3KM:~$ chmod 774 loop.sh
+mhd@DESKTOP-48BF3KM:~$ ./loop.sh
+enter some no
+3
+1 time 3
+enter some no
+4
+2 time 4
+enter some no
+4
+3 time 4
+enter some no
+1
+4 time 1
+mhd@DESKTOP-48BF3KM:~$ cat loop.sh
+for((c=1; c<5; c++))
+do
+        echo "enter some no"
+        read no
+        echo "$c time $no"
+done
+
+
+
+mhd@DESKTOP-48BF3KM:~$ nano
+mhd@DESKTOP-48BF3KM:~$ chmod 774 looparray.sh
+mhd@DESKTOP-48BF3KM:~$ nano looparray.sh
+mhd@DESKTOP-48BF3KM:~$ ./looparray.sh
+akshay
+athul
+ajay
+mhd@DESKTOP-48BF3KM:~$ cat looparray.sh
+MYFRIENDS=("akshay" "athul" "ajay")
+for friend in "${MYFRIENDS[@]}"
+        do
+                echo $friend
+        done    
+
+
+mhd@DESKTOP-48BF3KM:~$ nano
+mhd@DESKTOP-48BF3KM:~$ chmod 774 func.sh
+mhd@DESKTOP-48BF3KM:~$ nano func.sh
+mhd@DESKTOP-48BF3KM:~$ ./func.sh athul ajay
+function with argument
+hi,athul
+hello,ajay
+mhd@DESKTOP-48BF3KM:~$ cat func.sh
+myfunction(){
+        echo "function with argument"
+        echo "hi,$1"
+        echo "hello,$2"
+}
+myfunction $1 $2      
+
+
+mhd@DESKTOP-48BF3KM:~$ bash -x ./func.sh
++ myfunction
++ echo 'function with argument'
+function with argument
++ echo hi,
+hi,
++ echo hello,
+hello,  
+
+
+
+
+
+mhd@DESKTOP-48BF3KM:~$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2+5
+7
+>>> 45-10
+35
+>>> 3*5
+15
+>>> 4/3
+1.3333333333333333
+>>> 4//3
+1
+>>> 17%3
+2
+>>> a='hello'
+>>> a[3]
+'l'
+>>> class student:
+...     def set(self,id,name,address):
+...             self.id=id
+...             self.name=name
+...             self.address=address
+...     def get(self):
+...             print('id:',self.id,'name:',self.name,'address:',self.address)
+...
+>>> s=student()
+>>> s.set(206545,'faheem','nv')
+>>> s.get()
+id: 206545 name: faheem address: nv   
+
+
+
+
+
+
+
+
+
+mhd@DESKTOP-48BF3KM:~$ ansible --version
+ansible [core 2.11.7]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/mhd/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/mhd/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+mhd@DESKTOP-48BF3KM:~$ ansible all -m setup
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+mhd@DESKTOP-48BF3KM:~$ nano test.yml
+mhd@DESKTOP-48BF3KM:~$ cat test.yml
+---
+faheem:
+        name: faheem
+        id: 206545
+        location: trivandrum
+        role: developer
+        likes:
+           - maths
+           - physics
+...
+
+
+
+
+mhd@DESKTOP-48BF3KM:~$ ansible-galaxy init --force --offline faheemrole
+
+- Role faheemrole was created successfully
+mhd@DESKTOP-48BF3KM:~$
+mhd@DESKTOP-48BF3KM:~$ tree faheemrole
+faheemrole
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+8 directories, 8 files
+mhd@DESKTOP-48BF3KM:~$ mkdir faheem_playbook
+mhd@DESKTOP-48BF3KM:~$ cd faheem_playbook
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ nano faheem_orchestrate.yml
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ ansible-galaxy init --force --offline install-tomcat
+- Role install-tomcat was created successfully
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ vd install-tomcat
+
+Command 'vd' not found, but can be installed with:
+
+sudo apt install visidata
+
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ cd install-tomcat
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat$ ls
+README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat$ cd ..
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ ansible-galaxy init --force --offline start-tomcat
+- Role start-tomcat was created successfully
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ ls
+install-tomcat  start-tomcat
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ tree install-tomcat
+install-tomcat
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+8 directories, 8 files
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ cd install-tomcat
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat$ cd tasks
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat/tasks$ nano main.yml
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat/tasks$ cd ../..
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ nano faheem_orchestrate.yml
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ cd install-tomcat
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat$ cd tasks
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat/tasks$ cd ../..
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ cd start-tomcat
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/start-tomcat$ cd tasks
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/start-tomcat/tasks$ nano main.yml
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/start-tomcat/tasks$ cd ../..
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ cd install-tomcat
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat$ nano main.yml
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat$ cd tasks
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat/tasks$ nano main.yml
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat/tasks$ cd ../..
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ sudo ansible-playbook -i hosts faheem_orchestrate.yml -vvv
+[sudo] password for mhd:
+-playbook [core 2.11.7]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+Using /etc/ansible/ansible.cfg as config file
+host_list declined parsing /home/mhd/faheem_playbook/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+script declined parsing /home/mhd/faheem_playbook/hosts as it did not pass its verify_file() method
+auto declined parsing /home/mhd/faheem_playbook/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+yaml declined parsing /home/mhd/faheem_playbook/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+ini declined parsing /home/mhd/faheem_playbook/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+toml declined parsing /home/mhd/faheem_playbook/hosts as it did not pass its verify_file() method
+[WARNING]: Unable to parse /home/mhd/faheem_playbook/hosts as an inventory source
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ 12345
+12345: command not found
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ :wq
+:wq: command not found
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ cd install-tomcat/tasks
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat/tasks$ cat main.yml
+---
+# tasks file for install-tomcat
+-
+ block:
+   - name: Install Tomcat artifacts
+      action: >
+      yum name = "demo-tomcat-1" state=present
+      register: Output
+
+ always:
+   - debug:
+      msg:
+        - "Install Tomcat artifactstask ended with message: {{Output}}"
+        - "Install Tomcat artifacts - {{Output.changed}}"
+
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/install-tomcat/tasks$ cd ../..
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ cd start-tomcat/tasks
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/start-tomcat/tasks$ cat main.yml
+---
+# tasks file for start-tomcat
+-
+ block:
+   - name: Start tomcat
+     command: <path of tomcat>/bin/startup.sh
+     register: Output
+     become: true
+
+ always:
+    - debug:
+       msg:
+         - "Start Tomcat task ended with message: {{Output}}"
+         - "Tomcat started - {{Output.changed}}"
+mhd@DESKTOP-48BF3KM:~/faheem_playbook/start-tomcat/tasks$ cd ../..
+mhd@DESKTOP-48BF3KM:~/faheem_playbook$ cat faheem_orchestrate.yml
+---
+- hosts: tomcat-node
+  roles:
+    - {role: install-tomcat}
+    - {role: start-tomcat}                                     

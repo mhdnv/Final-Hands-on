@@ -1,0 +1,856 @@
+    1  pwd
+    2  ls
+    3  python3
+    4  sudo apt update
+    5  sudo apt install software-properties-common
+    6  sudo add-apt-repository --yes --update ppa:ansible/ansible
+    7  sudo apt install ansible
+    8  apt update
+    9  sudo apt update
+   10  ansible aa -m ping --asl-all
+   11  sudo apt install ansible
+   12  clear
+   13  python3
+   14  clear
+   15  sudo apt update
+   16  sudo apt install software-properties-common
+   17  sudo add-apt-repository --yes --update ppa:ansible/ansible
+   18  sudo apt install ansible
+   19  ansible all -m ping --ask-pass
+   20  clear
+   21  sudo add-apt-repository main
+   22  sudo add-apt-repository universe
+   23  sudo add-apt-repository ppa:<ansible>
+   24  sudo add-apt-repository ppa:<repository-ansible>
+   25  sudo apt-get update
+   26  clear
+   27  sudo apt update
+   28  lsb release -a
+   29  sudo add-apt-repository universe multiverse
+   30  sudo add-apt-repository universe
+   31  sudo add-apt-repository multiverse
+   32  lsb release -a
+   33  id
+   34  clear
+   35  sudo apt update
+   36  sudo apt install ansible
+   37  hostnamectl
+   38  clear
+   39  cat /etc/issue
+   40  cat /etc/os-release
+   41  sudo add-apt-repository universe
+   42  sudo add-apt-repository restricted
+   43  sudo add-apt-repository multiverse
+   44  sudo apt update
+   45  sudo apt install software-properties-common
+   46  sudo add-apt-repository --yes --update ppa:ansible/ansible
+   47  sudo add-apt-repository --yes --update ppa:Ansible/Ansible
+   48  clear
+   49  wsl --install
+   50  mkdir gfd
+   51  ls
+   52  cd gfd
+   53  ls
+   54  clear
+   55  pew
+   56  sudo apt install ansible
+   57  man apt
+   58  cd ..
+   59  apt upgrade
+   60  sudo apt upgrade
+   61  sudo apt update
+   62  ls
+   63  rm --gfd
+   64  clear
+   65  pwd
+   66  clear
+   67  ls
+   68  rm --gfd
+   69  r --gfd
+   70  cd
+   71  clear
+   72  python3
+   73  clear
+   74  touch myinfo.txt
+   75  ls
+   76  file myinfo.txt
+   77  rm --myinfo.txt
+   78  ls
+   79  echo"this is my info">myinfo.txt
+   80  cat myinfo.txt
+   81  clear
+   82  echo "this is my info">myinfo.txt
+   83  cat myinfo.txt
+   84  ls -l
+   85  +r myinfo.txt
+   86  +w myinfo.txt
+   87  chmod +r myinfo.txt
+   88  chmod +w myinfo.txt
+   89  ls -l
+   90  clear
+   91  cat myinfo.txt
+   92  ls -l
+   93  chmod +rwx myinfo.txt
+   94  ls -l
+   95  cat myinfo.txt
+   96  echo "txt file" >myinfo.txt
+   97  cat myinfo.txt
+   98  clear
+   99  cat myinfo.txt
+  100  ls -l
+  101  chmod +rwx myinfo.txt
+  102  ls -l
+  103  cat myinfo.txt
+  104  ls -l
+  105  rm--myinfo.txt
+  106  clear
+  107  echo $SHELL
+  108  echo faheem
+  109  #echo jkkj
+  110  apt rm
+  111  rm --help
+  112  ls
+  113  rm -- myinfo.txt
+  114  ls
+  115  clear
+  116  ls -l
+  117  chmod -w gfd
+  118  ls -l
+  119  ./myinfo.txt
+  120  ./gfd
+  121  ls -ih
+  122  clear
+  123  nano
+  124  ./fhm.sh
+  125  chmod +x fhm.sh
+  126  ./fhm.sh
+  127  clear
+  128  nano
+  129  clear
+  130  nano
+  131  ls
+  132  chmod +x mycommands.sh
+  133  ./mycommands.sh
+  134  cd nano
+  135  nano
+  136  cat myfilewithvars.sh
+  137  chmod +x myfilewithvars.sh
+  138  ./myfilewithvars.sh
+  139  nano myfilewithvars.sh
+  140  ./myfilewithvars.sh
+  141  clear
+  142  ls
+  143  chmod +x myfilewithvars.sh
+  144  ls -l
+  145  nano myfilewithvars.sh
+  146  ./myfilewithvars.sh
+  147  nano myfilewithvars.sh
+  148  ./myfilewithvars.sh
+  149  nano myfilewithvars.sh
+  150  ./myfilewithvars.sh
+  151  nano myfilewithvars.sh
+  152  ./myfilewithvars.sh
+  153  nano mycommands.sh
+  154  ,/mycommands.sh
+  155  ./mycommands.sh
+  156  touch reading.sh
+  157  ls
+  158  namo reading.sh
+  159  nano reading.sh
+  160  ./reading.sh
+  161  chmod +x reading.sh
+  162  ./reading.sh
+  163  rm -- fhm.sh
+  164  ls
+  165  rm -- asd.txt
+  166  rm -- gfd
+  167  ls
+  168  nano
+  169  ls -l exampleread.sh
+  170  chmod 774 exampleread.sh
+  171  ls -l
+  172  ./exampleread.sh
+  173  nano reading.sh
+  174  ll
+  175  la
+  176  ri
+  177  man ls8
+  178  nano reading.sh
+  179  nano mycommands.sh
+  180  clear
+  181  ls
+  182  nano mycommands.sh
+  183  ls -l
+  184  ./mycommands.sh
+  185  nano myfilewithvars.sh
+  186  chmod +x myfilewithvars.sh
+  187  ./myfilewithvars.sh
+  188  nano reading.sh
+  189  chmod +x reading.sh
+  190  ./reading.sh
+  191  nano exampleread.sh
+  192  chmod 774 exampleread.sh
+  193  ./exampleread.sh
+  194  touch .bash_aliases
+  195  nano .bash_aliases
+  196  l
+  197  chmod +x .bash_aliase
+  198  chmod +x .bash_aliase.sh
+  199  nano .bash_aliases
+  200  chmod +x .bash_aliases
+  201  l
+  202  h
+  203  ls
+  204  ls -a
+  205  ll
+  206  la
+  207  nano .bash_aliases
+  208  ll
+  209  lh
+  210  la
+  211  ls
+  212  ./mycommands.sh
+  213  ./myfilewithvars.sh
+  214  ./reading.sh
+  215  ./exampleread.sh
+  216  rm -- asd.txt
+  217  ls
+  218  ls -il
+  219  ls -ih
+  220  nano mycommands.sh
+  221  ls
+  222  ansible
+  223  find .-name gfd -delete
+  224  find .-gfd -delete
+  225  ls
+  226  uptime
+  227  p
+  228  l
+  229  s
+  230  a
+  231  ls -il
+  232  nano mycommands.sh
+  233  ./mycommands.sh
+  234  nano reading.sh
+  235  ./reading.sh
+  236  ls -ih
+  237  clear
+  238  cd
+  239  ls
+  240  cat asd.txt
+  241  cat mycommands.sh
+  242  i have a car i have a vehicle
+  243  python3
+  244  ls
+  245  ./mycommands.sh
+  246  sample.sh
+  247  ls -a
+  248  cd mycommands.sh
+  249  ls
+  250  ./myfilewithvars.sh
+  251  ./reading.sh
+  252  clear
+  253  ls
+  254  ./reading.sh
+  255  ls
+  256  ls -il
+  257  ls -is
+  258  cat reading.sh
+  259  ./reading.sh
+  260  nano
+  261  file .txt
+  262  sample.sh
+  263  echo "faheem">fhm.txt
+  264  ls
+  265  cat fhm.txt
+  266  mkdir asdf.txt
+  267  ls
+  268  cat asdf.txt
+  269  file .-asdf.txt -delete
+  270  ls
+  271  rm -- asdf.txt
+  272  file .-asdf -delete
+  273  rm -- fhm.txt
+  274  ls
+  275  ./exampleread.sh
+  276  ls3
+  277  pwd
+  278  echo$SHELL
+  279  clear
+  280  python
+  281  python3
+  282  ls
+  283  whoami
+  284  find.-name asdf.txt -delete
+  285  find .-name asdf.txt -delete
+  286  find .-asdf.txt -delete
+  287  ls
+  288  id
+  289  passwd
+  290  ./reading.sh
+  291  ,name,color,price):
+  292  ...             self.name=name
+  293  ...             self.color=color
+  294  ...             self.price=price
+  295  ...     def get(self):
+  296  ...             print('name:',self.name,'color:',self.color,'price:',self.price)
+  297  ...
+  298  >>> a=fruits()
+  299  >>> a.set('apple','red',123)
+  300  >>> a.get()
+  301  name: apple color: red price: 123
+  302  >>> a.set(mango,blue,234)
+  303  Traceback (most recent call last):
+  304  NameError: name 'mango' is not defined
+  305  >>> a.set('mango',blue,344)
+  306  Traceback (most recent call last):
+  307  ...             self.name=name
+  308  ...             self.color=color
+  309  ...             self.price=price
+  310  ...     def get(self):
+  311  ...             print('name:',self.name,'color:',self.color,'price:',self.price)
+  312  ...
+  313  >>> a=fruits()
+  314  >>> a.set('apple','red',123)
+  315  >>> a.get()
+  316  name: apple color: red price: 123
+  317  >>> a.set(mango,blue,234)
+  318  Traceback (most recent call last):
+  319  NameError: name 'mango' is not defined
+  320  >>> a.set('mango',blue,344)
+  321  Traceback (most recent call last):
+  322  ...             self.name=name
+  323  ...             self.color=color
+  324  ...             self.price=price
+  325  ...     def get(self):
+  326  ...             print('name:',self.name,'color:',self.color,'price:',self.price)
+  327  ...
+  328  >>> a=fruits()
+  329  >>> a.set('apple','red',123)
+  330  >>> a.get()
+  331  name: apple color: red price: 123
+  332  >>> a.set(mango,blue,234)
+  333  Traceback (most recent call last):
+  334  NameError: name 'mango' is not defined
+  335  >>> a.set('mango',blue,344)
+  336  Traceback (most recent call last):
+  337  ...             self.name=name
+  338  ...             self.color=color
+  339  ...             self.price=price
+  340  ...     def get(self):
+  341  ...             print('name:',self.name,'color:',self.color,'price:',self.price)
+  342  ...
+  343  >>> a=fruits()
+  344  >>> a.set('apple','red',123)
+  345  >>> a.get()
+  346  name: apple color: red price: 123
+  347  >>> a.set(mango,blue,234)
+  348  Traceback (most recent call last):
+  349  NameError: name 'mango' is not defined
+  350  >>> a.set('mango',blue,344)
+  351  Traceback (most recent call last):
+  352  ...             self.name=name
+  353  ...             self.color=color
+  354  ...             self.price=price
+  355  ...     def get(self):
+  356  ...             print('name:',self.name,'color:',self.color,'price:',self.price)
+  357  ...
+  358  >>> a=fruits()
+  359  >>> a.set('apple','red',123)
+  360  >>> a.get()
+  361  name: apple color: red price: 123
+  362  >>> a.set(mango,blue,234)
+  363  Traceback (most recent call last):
+  364  NameError: name 'mango' is not defined
+  365  >>> a.set('mango',blue,344)
+  366  Traceback (most recent call last):
+  367  ...             self.name=name
+  368  ...             self.color=color
+  369  ...             self.price=price
+  370  ...     def get(self):
+  371  ...             print('name:',self.name,'color:',self.color,'price:',self.price)
+  372  ...
+  373  >>> a=fruits()
+  374  >>> a.set('apple','red',123)
+  375  >>> a.get()
+  376  name: apple color: red price: 123
+  377  >>> a.set(mango,blue,234)
+  378  Traceback (most recent call last):
+  379  NameError: name 'mango' is not defined
+  380  >>> a.set('mango',blue,344)
+  381  Traceback (most recent call last):
+  382  ...             self.name=name
+  383  ...             self.color=color
+  384  ...             self.price=price
+  385  ...     def get(self):
+  386  ...             print('name:',self.name,'color:',self.color,'price:',self.price)
+  387  ...
+  388  >>> a=fruits()
+  389  >>> a.set('apple','red',123)
+  390  >>> a.get()
+  391  name: apple color: red price: 123
+  392  >>> a.set(mango,blue,234)
+  393  Traceback (most recent call last):
+  394  NameError: name 'mango' is not defined
+  395  >>> a.set('mango',blue,344)
+  396  Traceback (most recent call last):
+  397  clear
+  398  ls
+  399  ./vars.sh
+  400  nano
+  401  chmod 774 reading.sh
+  402  ./reading.sh
+  403  nano
+  404  chmod 774 ifelse.sh
+  405  ./ifelse.sh
+  406  nano
+  407  nano oddeven.sh
+  408  nano
+  409  chmod 774 oddeven.sh
+  410  ./oddeven.sh
+  411  nano oodeven.sh
+  412  nano oddeven.sh
+  413  chmod +x oddeven.sh
+  414  ./oddeven.sh
+  415  nano oddeven.sh
+  416  chmod 774 evenodd.sh
+  417  ./evenodd.sh
+  418  ls
+  419  rm -- oddeven.sh
+  420  rm -- evenodd.sh
+  421  ls
+  422  nano
+  423  chmod 774 eo.sh
+  424  ./eo.sh
+  425  nano eo.sh
+  426  ./eo.sh
+  427  nano eo.sh
+  428  ./eo.sh
+  429  nano eo.sh
+  430  ./eo.sh
+  431  nano eo.sh
+  432  ./eo.sh
+  433  nano eo.sh
+  434  ./eo.sh
+  435  nano eo.sh
+  436  ./eo.sh
+  437  nano eo.sh
+  438  ./eo.sh
+  439  nano eo.sh
+  440  chmod 774 eo.sh
+  441  ./eo.sh
+  442  nano eo.sh
+  443  ./eo.sh
+  444  nano eo.sh
+  445  ./eo.sh
+  446  nano
+  447  chmod 774 whilemul.sh
+  448  ./whilemul.sh
+  449  nano
+  450  chmod 774 friends.ch
+  451  ls
+  452  chmod 774 friends.sh
+  453  ./friends.sh
+  454  nano friends.sh
+  455  ./friends.sh
+  456  nano friends.sh
+  457  ./friends.sh
+  458  nano
+  459  chmod 774 while.sh
+  460  ./while.sh
+  461  nano while.sh
+  462  ./while.sh
+  463  nano while.sh
+  464  ./while.sh
+  465  nano while.sh
+  466  chmod +x while.sh
+  467  ./while.sh
+  468  nano while.sh
+  469  ls
+  470  \nano eo.sh
+  471  ./vars.sh
+  472  ./reading.sh
+  473  ./ifelse.sh
+  474  ./whilemul.sh
+  475  ./eo.sh
+  476  ./friends.sh
+  477  sudo apt install ansible
+  478  ls
+  479  LS
+  480  ls
+  481  nano
+  482  chmod +x func.sh
+  483  ./func.sh
+  484  ls
+  485  nano func.sh
+  486  ./func.sh faheem naheel
+  487  nano while.sh
+  488  ./while.sh
+  489  chmod +x while.sh
+  490  ./while.sh
+  491  nano while.sh
+  492  ./while.sh
+  493  ls -il
+  494  ./friends.sh
+  495  -a
+  496  l -a
+  497  ./func.sh 123 4556
+  498  clear
+  499  pwd
+  500  ls
+  501  ./while.sh
+  502  bash -x ./while.sh
+  503  nano while.sh
+  504  ./while.sh
+  505  clear
+  506  python3
+  507  clear
+  508  python3
+  509  -h
+  510  ansible -h
+  511  ansible --versions
+  512  ---
+  513  nano
+  514  ansible-glaxy -h
+  515  ansible-galaxy -h
+  516  ansible-galaxy init mhd
+  517  tree mhd
+  518  sudo apt install tree
+  519  tree mhd
+  520  cd /mhd
+  521  nano
+  522  chmod +x my.yml
+  523  ./my.yml
+  524  cat my.yml
+  525  cd \mhd
+  526  ls
+  527  nano
+  528  chmod 774 fib.sh
+  529  ./fib.sh
+  530  nano fib.sh
+  531  ./fib.sh
+  532  nano fib.sh
+  533  ./fib.sh
+  534  nano fib.sh
+  535  ./fib.sh
+  536  nano fib.sh
+  537  ./fib.sh
+  538  nano fib.sh
+  539  ./fib.sh
+  540  nano fib.sh
+  541  ./fib.sh
+  542  nano fib.sh
+  543  ./fib.sh
+  544  nano fib.sh
+  545  ./fib.sh
+  546  clear
+  547  nano fib.sh
+  548  ./fib.sh
+  549  nano
+  550  nano fib.sh
+  551  ./fib.sh
+  552  nano
+  553  chmod 774 prime.sh
+  554  ./prime.sh
+  555  ls
+  556  rm -- fib.sh
+  557  rm -- prime.sh
+  558  ls
+  559  cd 2
+  560  mkdir Abcimpex
+  561  ls
+  562  add user
+  563  useradd
+  564  adduser
+  565  sudo adduser
+  566  ls
+  567  sudo useradd user1
+  568  ls
+  569  cd /user1
+  570  whoami
+  571  su - user1
+  572  clear
+  573  sudo useradd user1
+  574  sudo user 2
+  575  sudo useradd fhm
+  576  su - fhm
+  577  clear
+  578  users
+  579  sudo apt install ansible
+  580  su - fhnm
+  581  \fhm
+  582  ls
+  583  cd Abcimpex
+  584  sudo usr1
+  585  sudo useradd usr1
+  586  su - user1
+  587  sudo adduserusr1
+  588  sudo adduser user1
+  589  sudo adduser ur1
+  590  ls
+  591  cd Abcimpex
+  592  sudo adduser ur1
+  593  su - ur1
+  594  clear
+  595  sudo deluser user1
+  596  sudo deluser ur1
+  597  sudo deluser ur2
+  598  sudo deluser ur3
+  599  sudo deluser ur4
+  600  sudo deluser fhm
+  601  usr1
+  602  sudo deluser usr1
+  603  cat /etc/passwd
+  604  clear
+  605  ls
+  606  cd Abcimpex
+  607  sudo adduser one
+  608  sudo deluser one
+  609  cd ..
+  610  su - one
+  611  clear
+  612  sudo adduser one
+  613  sudo deluser one
+  614  clear
+  615  ls
+  616  cd Abcimpex
+  617  sudo adduser one
+  618  su - one
+  619  clear
+  620  su - root
+  621  su - ur1
+  622  ls
+  623  cd Abcimpex
+  624  mkdir initialgalaxy
+  625  ls
+  626  cd initialgalaxy
+  627  ls>galaxyinfor.txt
+  628  ls
+  629  cd ../..
+  630  su - ur1
+  631  ls
+  632  sudo adduser ur2
+  633  sudo adduser ur3
+  634  sudo adduser ur4
+  635  su - ur2
+  636  su - one
+  637  sudo
+  638  sudo deluser one
+  639  sudo deluser ur1
+  640  su - ur1
+  641  sudo deluser ur2
+  642  sudo deluser ur3
+  643  sudo deluser ur4
+  644  cat /etc/passwd
+  645  clear
+  646  sudo adduser timjag
+  647  su - timjag
+  648  sudo deluser timjag
+  649  sudo addgroup devops
+  650  cat /etc/groups
+  651  cat /etc/group
+  652  ls
+  653  touch allperms.txt
+  654  ls
+  655  ls -il allperms.txt
+  656  chmod 774 allperms.txt
+  657  ls -il allperms.txt
+  658  chmod 777 allperms.txt
+  659  ls -il allperms.txt
+  660  mkdir temp
+  661  pwd
+  662  ls
+  663  cp allperms.txt temp
+  664  ls
+  665  cd mhd
+  666  ls
+  667  cd ..
+  668  cd temp
+  669  ls
+  670  cd ..
+  671  sudo apt install sl
+  672  sl
+  673  touch empty.txt
+  674  ls
+  675  echo ' ' > /homemmhd/empty.txt
+  676  echo ' ' > /home/mhd/empty.txt
+  677  ls
+  678  ls -il empty.txt
+  679  cd home
+  680  cd /home
+  681  mkdir bootcamp
+  682  ls
+  683  cd..
+  684  cd .
+  685  cd ..
+  686  ls
+  687  cd ..
+  688  cd ../..
+  689  cd /mhd
+  690  sudo adduser timjag
+  691  sudo gruopadd devops
+  692  su - faheem
+  693  cat /etc/passwd
+  694  clear
+  695  sudo adduser timjag
+  696  su - timjag
+  697  nano
+  698  chmod 774 par.sh
+  699  ./par.sh
+  700  ./par.sh 43 faheem
+  701  nano
+  702  chmod 774 if.sh
+  703  ./if.sh
+  704  ./if.sh 34 56
+  705  ./if.sh 12 12
+  706  nano if.sh
+  707  sudo deluser timjag
+  708  clear
+  709  sudo deluser timjag
+  710  qclear
+  711  clear
+  712  ls
+  713  rm -- par.sh
+  714  rm -- if.sh
+  715  ls
+  716  clear
+  717  nano
+  718  chmod 774 func.sh
+  719  ./func.sh
+  720  nano func.sh
+  721  ./func.sh
+  722  nano func.sh
+  723  ./func.sh
+  724  nano func.sh
+  725  ./func.sh
+  726  ./func.sh tr yt
+  727  nano func.sh
+  728  ./func.sh
+  729  ls
+  730  rm -- func.sh
+  731  ls
+  732  clear
+  733  nano
+  734  chmod 774 args.sh
+  735  ./args.sh 12 hello hey
+  736  nano
+  737  chmod 774 input.sh
+  738  ./input.sh athul akhil arun
+  739  nano
+  740  chmod 774 ifelse.sh
+  741  ./ifelse.sh 12 15
+  742  ./ifelse.sh 12 12
+  743  sudo adduser faheem
+  744  su - faheem
+  745  ls
+  746  ./args.sh
+  747  ./input.sh
+  748  ./args.sh 12 hello hey
+  749  ./input.sh ajay nikhil akhil
+  750  ./ifelse.sh 12 15
+  751  ./ifelse.sh 12 12
+  752  sudo adduser dark
+  753  su - dark
+  754  nano args.sh
+  755  ./args.sh
+  756  su - dark
+  757  cd ..
+  758  sudo mkdir bootcamp
+  759  ls
+  760  cd bootcamp
+  761  touch null.txt
+  762  ls
+  763  touch zero.txt
+  764  cd ..
+  765  su - dark
+  766  sudo addgroup devops
+  767  ls
+  768  sudo usermod -aG sudo dark
+  769  groups dark
+  770  su - dark
+  771  ls
+  772  ./args.sh
+  773  ./input.sh akhil athul arun
+  774  ./ifelse.sh
+  775  ./ifelse.sh 12 15
+  776  ./ifelse.sh 12 12
+  777  sudo adduser jack
+  778  passwd
+  779  sudo -aG sudo jack
+  780  su - jack
+  781  sudo mhd -aG sudo jack
+  782  mhd -aG sudo jack
+  783  sudo usermod -aG sudo jack
+  784  groups jack
+  785  su - jack
+  786  pwd
+  787  ls
+  788  rm -- empty.txt
+  789  ls
+  790  rm -- ifelse.sh
+  791  rm -- input.sh
+  792  rm -- args.sh
+  793  ls
+  794  rm -- allperms.txt
+  795  ls
+  796  clear
+  797  ls
+  798  mkdir zing
+  799  ls
+  800  sudo adduser one
+  801  ls
+  802  su - one
+  803  sudo deluser one
+  804  cat /etc/user
+  805  cat /etc/passwd
+  806  sudo deluser jack
+  807  sudo deluser dark
+  808  sudo deluser faheem
+  809  sudo deluser timjag
+  810  sudo deluser one
+  811  cat /etc/passwd
+  812  claer
+  813  clear
+  814  sudo adduser dark
+  815  sudo adduser light
+  816  su - dark
+  817  cat /etc/passwd
+  818  sudo deluser light
+  819  sudo deluser dark
+  820  sudo deluser one
+  821  cat /etc/passwd
+  822  ls
+  823  pwd
+  824  cd /mhd
+  825  cd zing
+  826  cd ..
+  827  na ond
+  828  systemncan priny
+  829  nano
+  830  ls
+  831  nano
+  832  sudo adduser zing1
+  833  su - zing1
+  834  cat /etc/passwd
+  835  sudo deluser zing1
+  836  ls
+  837  mkdir Hashmum
+  838  ls
+  839  sudo adduser user1
+  840  sudo adduser user2
+  841  su - user1
+  842  mkdir
+  843  history
+
+
+
+
+
+
+
+
+
+
+
+
+
